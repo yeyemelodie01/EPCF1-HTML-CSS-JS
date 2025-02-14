@@ -30,6 +30,12 @@ header{
 
 header a{
     color: #FFF;
+    transition: color 0.5s ease-in-out;
+}
+
+header a:hover {
+    color: #d46531;
+
 }
 
 header nav{
@@ -129,6 +135,7 @@ main>section:first-child li{
 
 main > section:first-child section{
     display: flex;
+    flex-direction: column;
 }
 
 main>section:first-child section div{
@@ -190,6 +197,11 @@ main>section:last-child section div button{
     margin-top: 13px;
     cursor: pointer;
     font-size: 1.1rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+main>section:last-child section div button:hover {
+    background-color: #f58a5e;
 }
 
 /* FOOTER */
@@ -228,6 +240,11 @@ footer form button{
     padding: 8px 10px;
     cursor: pointer;
     font-size: 1.1rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+footer form button:hover {
+    background-color: #f58a5e;
 }
 
 /* RESPONSIVE */
@@ -250,7 +267,6 @@ footer form button{
     }
 
     main>section:first-child section{
-        flex-direction: column;
         align-items: center;
     }
 
@@ -329,8 +345,22 @@ footer form button{
     main > section:last-child section div {
         width: 30%;
     }
+
+    footer form div {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 1200px){
-    
+    header nav ul {
+        width: 30%;
+    }
+
+    #site > section img {
+        width: 17%;
+    }
+
+    main > section:last-child section div {
+        width: 23%;
+    }
 }
