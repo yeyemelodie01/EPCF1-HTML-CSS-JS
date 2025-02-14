@@ -37,7 +37,9 @@ header nav ul{
     width: 100%;
 }
 
-#profil{
+/* PROFIL */
+
+#site>section{
     background-color: #d46531;
     display: flex;
     justify-content: center;
@@ -46,30 +48,30 @@ header nav ul{
     padding: 40px 0;
 }
 
-#profil img{
+#site>section img{
     width: 50%;
     background-color: #FFF;
     border-radius: 50%;
 }
 
-#profil p{
+#site>section p{
     width: 62%;
     margin-top: 25px;
 }
 
 /* COMPETENCES */
-#competences{
+main>section:first-child{
     padding: 40px 15px;
 }
 
-#competences ul{
+main>section:first-child ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 25px;
 }
 
-#competences li{
+main>section:first-child li{
     border: 4px solid #363636;
     border-radius: 15px;
     padding: 12px;
@@ -116,33 +118,33 @@ header nav ul{
     font-weight: bold;
 }
 
-#competences div{
+main>section:first-child section div{
     border: 4px solid #363636;
     border-radius: 15px;
     padding: 20px;
     background-color: #9eccf8;
 }
 
-#competences div:first-of-type{
+main>section:first-child section div:first-of-type{
     margin-bottom: 20px;
 }
 
-#competences div h3{
+main>section:first-child section div h3{
     font-weight: bolder;
 }
 
 /* PROJETS */
-#projets{
+main>section:last-child{
     background-color: #d46531;
     padding: 40px 15px;
 }
 
-#projets section{
+main>section:last-child section{
     display: flex;
     flex-direction: column;
 }
 
-#projets section div{
+main>section:last-child section div{
     background-color: #FFFFFF;
     border: 4px solid #363636;
     border-radius: 15px;
@@ -150,25 +152,57 @@ header nav ul{
     margin-bottom: 30px
 }
 
-#projets section div h3{
+main>section:last-child section div h3{
     font-weight: 500;
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 17px;
 }
 
-#projets section div p{
+main>section:last-child section div p{
     line-height: 25px;
     font-size: 1.1rem;
 }
 
-#projets section div button{
+main>section:last-child section div button{
     background-color: #363636;
     color: #FFF;
     border: none;
     border-radius: 9px;
     padding: 8px 10px;
     margin-top: 13px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer{
+    padding: 40px 15px;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+}
+
+footer form label{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+footer form input, footer form textarea{
+    border: 1px solid #363636;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+footer form button{
+    background-color: #363636;
+    color: #FFF;
+    border: none;
+    padding: 8px 10px;
     cursor: pointer;
     font-size: 1.1rem;
 }
